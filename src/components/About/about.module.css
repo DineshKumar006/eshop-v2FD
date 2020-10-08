@@ -1,0 +1,21 @@
+.head{
+    background: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    color: white;
+   
+    /* box-shadow: 0px 0px 10px 0px white; */
+    position: relative;
+    width: 100%;
+    bottom: -1;
+    height: 180px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.icons{
+    margin-top: 5px;
+}
+
+.icons span{
+    cursor: pointer;
+}

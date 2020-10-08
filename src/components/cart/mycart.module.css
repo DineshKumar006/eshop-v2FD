@@ -1,0 +1,181 @@
+
+.cardHead{
+    background: white;
+    min-height: 700px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+   
+  
+    /* margin: auto;  */
+
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+@media(max-width:55rem){
+    .card{
+        width: 100%;
+    }
+}
+
+.innerimg{
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 270px;
+    position: relative;
+   min-height: 280px;
+   /* border: 1px solid red; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 320px;
+}
+
+
+
+.Des{
+    min-height: 100px;
+    position: absolute;
+    bottom: 0;
+    transition: width 1ms , height 1ms , transform 1ms;
+    background: rgb(246, 213, 158);
+    opacity: 0.8;
+    width: 100%;
+    cursor: pointer;
+  
+    border-radius: 15px 15px 0px 0px;
+   
+}
+
+
+.Des button{
+    border: 1px solid red;
+    outline:none !important;
+
+    cursor: pointer;
+   width: 100px;
+   padding: 5px;
+/* border:none; */
+border-radius: 5px;
+background: orange;
+color: white;
+    box-sizing: border-box;
+}
+
+.innerDes{
+    display: none;
+}
+
+.Des p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-style: italic;
+   
+    box-sizing: border-box;
+    color: black;
+    border-bottom: 1px solid orange;
+    
+}
+.Des:hover{
+    min-height: 130px;
+}
+.Des:hover .innerDes{
+    display: block;
+   
+    cursor: pointer;
+}
+
+.morebutton{
+    /* border: 1px solid ; */
+    width:100%;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    align-items: center;
+
+
+}
+
+.morebutton button{
+    border: none;
+    outline: none !important;
+    color:  red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-style: italic;
+    background: transparent;
+    margin-right: 100px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 5px 0px red; */
+    border-bottom: 1px solid skyblue;
+    border-radius: 5px;
+    /* height: 20px; */
+    padding: 2px;
+    width: 80px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Spinner{
+    margin-top: 10px;
+}
+
+.discount{
+    position: absolute;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: small;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    left: 15px;
+}
+.deleteIcon{
+    position: absolute;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+
+    font-size: medium;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+   
+}
+
+.deleteIcon:hover{
+    background-color: rgb(236, 56, 56);
+    color: white;
+
+}
+.innerimg:hover .deleteIcon{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

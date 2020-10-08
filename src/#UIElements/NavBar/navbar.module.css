@@ -1,0 +1,25 @@
+.navhead{
+    position: relative;
+  
+    width: 100%;
+    height: 80px;
+    margin-bottom: 5px;
+    /* z-index: 100; */
+    /* border: 1px solid green; */
+
+}
+.innernavhead{
+position: fixed;
+width: 100%;
+height: 70px;
+background: black;
+z-index: 100;
+color: white;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+

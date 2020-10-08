@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  scroll-behavior: smooth;
+  background: rgb(253, 0, 0);
+  width:100%;
+  min-height:800px;
+}
+
+
+

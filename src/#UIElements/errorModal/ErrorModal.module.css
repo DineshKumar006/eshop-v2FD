@@ -1,0 +1,76 @@
+.Modalhead{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    z-index: 200
+    
+}
+
+.innerModal{
+    min-width: 300px;
+    min-height: 300px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px white;
+    border-radius: 5px;
+
+    
+}
+.innerModal p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    /* box-shadow: 0px 0px 5px 0px red; */
+    border-bottom: 1px solid red;
+    width: 70%;
+    height: 20px;
+
+
+    
+}
+
+.logotext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    /* width: 80%; */
+  /* border: 1px solid red; */
+    
+}
+
+.Logo{
+    border: 1px solid red;
+    padding: 5px;
+    width: 20px;
+    background: red;
+    color: white;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: normal;
+    border-radius: 50%;
+}
+
+.Ltext{
+    margin-left: 5px;
+    border-bottom: 1px solid white;
+}
+.okBtn{
+    width: 100px;
+    padding: 5px 0px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}

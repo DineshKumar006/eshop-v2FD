@@ -1,0 +1,14 @@
+.Head{
+
+    background: white;
+    min-height: 570px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.outersearchItem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

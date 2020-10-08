@@ -1,0 +1,232 @@
+.head{
+    /* border: 1px solid red; */
+  width: 100%;
+  min-height: 650px;
+  position: relative;
+  margin-top: 10px;
+  background: rgb(245, 246, 246);
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.contentHead{
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+
+ 
+}
+
+@media(min-width:70rem){
+  .contentHead{
+      width: 70%;
+      margin:auto;
+  }
+}
+.contentinner{
+  /* box-shadow: 0px 0px 5px 0px rgb(177, 175, 175); */
+  border-radius: 5px;
+   margin-top: 10px;
+   width: 270px;
+   position: relative;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 320px;
+
+}
+
+
+.contentinner img{
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgb(161, 162, 163);
+
+
+}
+
+.FallBack{
+  position: absolute;
+  /* border: 1px solid red; */
+  width: 100%;
+  min-height: 720px;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+ 
+}
+
+.Spinner{
+   
+width: 100%;
+padding: 10px 0px;
+box-sizing: border-box;
+}
+
+.text {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    display: flex;
+   
+    align-items: center;
+  
+    
+}
+.logo{
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.text .innertext{
+
+   margin-left: 10px;
+    border-bottom: 1px solid skyblue;
+}
+
+.brandHead{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.brandHead .brandBtn{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  margin-right: 20px;
+  align-items: center;
+ 
+
+}
+
+.brandHead .brandBtn button{
+  cursor: pointer;
+}
+
+.prevNextbtn{
+  outline: none !important;
+  border: none;
+  padding: 4px;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.innerBtn{
+  outline: none !important;
+  border: none;
+  padding: 3px;
+  width: 22px;
+  border: 1px solid red;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Des{
+  /* border-top: 1px solid orange; */
+  min-height: 100px;
+  position: absolute;
+  bottom: 0;
+  transition: width 1ms , height 1ms , transform 1ms;
+  background: rgb(246, 213, 158);
+  opacity: 0.8;
+  width: 100%;
+  cursor: pointer;
+
+  border-radius: 15px 15px 0px 0px;
+ 
+}
+
+
+.Des button{
+  border: 1px solid red;
+  outline:none !important;
+
+  cursor: pointer;
+ width: 100px;
+ padding: 5px;
+/* border:none; */
+border-radius: 5px;
+background: orange;
+color: white;
+  box-sizing: border-box;
+}
+
+.innerDes{
+  display: none;
+}
+
+.Des p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  font-style: italic;
+ 
+  box-sizing: border-box;
+  color: black;
+  border-bottom: 1px solid orange;
+  
+}
+.Des:hover{
+  min-height: 130px;
+}
+.Des:hover .innerDes{
+  display: block;
+ 
+  cursor: pointer;
+}
+
+
+
+.discount{
+  position: absolute;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-size: small;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2px;
+  left: 15px;
+}
+.slasherprice{
+  text-decoration: line-through;
+  color: red;
+}
+
+.cartIcon,.cartFavIcon{
+  position: absolute;
+  cursor: pointer;
+  right:12px;
+  top: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+}

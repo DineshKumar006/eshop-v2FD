@@ -1,0 +1,39 @@
+.selectItem{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.selectItem select{
+
+    min-width: 100px;
+    padding: 5px;
+    border:transparent;
+    background: skyblue;
+    border-radius: 5px;
+    outline: none !important;
+
+}
+
+.select{
+  
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.select label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-style: italic;
+    color: white;
+}
+
+.spinner{
+    padding: 5px;
+    /* border: 1px solid; */
+    margin: 10px 0px;
+}

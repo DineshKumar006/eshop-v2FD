@@ -1,0 +1,117 @@
+.profile{
+    background: white;
+    height: 578px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.innerprofile{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.maipulation ul{
+    list-style: none;
+ 
+
+}
+
+.maipulation ul li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  font-style: italic;
+  border-bottom: 1px solid red;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+.profilImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.fallback{
+position: absolute;
+top: 0;
+}
+
+
+
+
+.profilImg img{
+    box-shadow: 0px 0px 5px 0px orange;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+}
+
+.uploadFile{
+    display: none;
+}
+.uploadBtn{
+    margin:5px;
+    /* border: 1px solid red; */
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.uploadBtn .innerBtns .pickBtn{
+    padding: 5px;
+    border: transparent;
+    outline: none !important;
+    background: orange;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.enableBtn{
+    padding: 5px;
+    border: transparent;
+    outline: none !important;
+    background: orange;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.disableBtn{
+    padding: 5px;
+    border: transparent;
+    outline: none !important;
+    background: gray;
+    width: 100px;
+    cursor:not-allowed;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+
+
+.uploadBtn  .delBtn button{
+    background: white;
+    border: transparent;
+    outline: none !important;
+    cursor: pointer;
+}

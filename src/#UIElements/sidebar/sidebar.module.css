@@ -1,0 +1,74 @@
+.sidebarHead{
+    width: 350px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 300;
+    background: white;
+
+    color: black;
+    height:100vh;
+    border-radius: 0px 10px 10px 0px;
+    background: orange;
+    letter-spacing:1px;
+    /* transition: all 5s; */
+}
+
+
+
+@media(max-width:35rem){
+    .sidebarHead{
+        width: 300px;
+    } 
+}
+
+.closeBtn{
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+.closeBtn p{
+    box-shadow: 0px 0px 10px 0px red;
+    width: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+
+   
+
+}
+
+
+.logotext{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+    
+}
+
+.Logo{
+    border: 1px solid red;
+    padding: 5px;
+    width: 20px;
+    background: red;
+    color: white;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: normal;
+    border-radius: 50%;
+}
+
+.Ltext{
+    /* margin-left: 5px; */
+    border-bottom: 1px solid white;
+}
+

@@ -1,0 +1,156 @@
+.Header{
+    border-radius: 5px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+}
+
+.innerimg{
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 270px;
+    position: relative;
+   min-height: 280px;
+   /* border: 1px solid red; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 320px;
+}
+.innerimg image{
+    border: 1px solid red;
+}
+
+.cartIcon,.cartFavIcon{
+    position: absolute;
+    cursor: pointer;
+    right:12px;
+    top: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+.Des{
+    min-height: 100px;
+    position: absolute;
+    bottom: 0;
+    transition: width 1ms , height 1ms , transform 1ms;
+    background: rgb(246, 213, 158);
+    opacity: 0.8;
+    width: 100%;
+    cursor: pointer;
+  
+    border-radius: 15px 15px 0px 0px;
+   
+}
+
+
+.Des button{
+    border: 1px solid red;
+    outline:none !important;
+
+    cursor: pointer;
+   width: 100px;
+   padding: 5px;
+/* border:none; */
+border-radius: 5px;
+background: orange;
+color: white;
+    box-sizing: border-box;
+}
+
+.innerDes{
+    display: none;
+}
+
+.Des p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-style: italic;
+   
+    box-sizing: border-box;
+    color: black;
+    border-bottom: 1px solid orange;
+    
+}
+.Des:hover{
+    min-height: 130px;
+}
+.Des:hover .innerDes{
+    display: block;
+   
+    cursor: pointer;
+}
+
+
+
+
+@media(min-width:45rem){
+        .card{
+            width: 70%;
+        }
+}
+
+.moreBtn{
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px
+   
+}
+
+.moreBtn button{
+    margin-right: 200px;
+    /* padding: 5px; */
+    width: 70px;
+    background: transparent;
+    border:transparent;
+    border-bottom: 1px solid skyblue;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-style: italic;
+    cursor: pointer;
+    outline: none !important;
+}
+.head{
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-style: italic;
+    /* border: 1px solid green; */
+    box-shadow: 0px 0px 5px 0px orange;
+
+
+}
+.spinner{
+    margin-top: 10px;
+}
+
+.discount{
+    position: absolute;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: small;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 15px;
+}
+
+.slasherprice{
+    text-decoration: line-through;
+    color: red;
+}

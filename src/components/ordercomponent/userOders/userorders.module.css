@@ -1,0 +1,106 @@
+.head{
+    /* border: 1px solid green; */
+    min-height: 500px;
+}
+
+
+.innerImg{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    margin:5px;
+    background: white;
+    min-height: 250px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.innerImg img{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+.description{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: start;
+
+}
+
+.textHead{
+    border: 1px solid white;
+    /* text-align: start; */
+    background: white;
+    border-radius: 5px;
+    margin:5px;
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+
+}
+.textHead .innertext p{
+font-size: larger;
+font-style: italic;
+color: red;
+        margin-left: 30px;
+        border-bottom: 1px solid skyblue;
+        min-width: 100px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+}
+.textLogo{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    min-width: 100px;
+}
+
+.textLogo .Logo{
+    border: 1px solid red;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+@media(max-width:45rem){
+    .textLogo span{
+        font-size: small;
+    }
+}
+
+
+.morebtn{
+  height: 50px;
+    
+  position: relative;
+  
+}
+.morebtn button{
+
+   position: absolute;  
+top: 0;
+right: 150px;
+    border: none;
+    outline: none !important;
+    background: transparent;
+    color: white;
+    font-size: large;
+    font-style: italic;
+    border-bottom: 1px solid skyblue;
+    height: 20px;
+    cursor: pointer
+    
+}
