@@ -102,6 +102,7 @@ const changeHandler=()=>{
             <div className={Style.CheckoutHead}>
 
                   <div className={Style.Deshead}>
+                      
                       <p>details</p>
 
                       {checkoutData!==null&& 
