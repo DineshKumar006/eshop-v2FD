@@ -1,27 +1,40 @@
 .CheckoutHead{
     width: 100%;
-    min-height:700px ;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background: wheat;
+    flex-wrap:wrap;
+
 }
 .Deshead{
     /* border:1px solid red; */
-    width: 50%;
+    min-width: 50%;
  
 }
 .formhead{
     /* border:1px solid red; */
-    width: 50%;
+    min-width: 50%;
  
+}
+
+@media(max-width:45rem){
+    .Deshead{
+        /* border:1px solid red; */
+        width: 100%;
+     
+    }
+    .formhead{
+        /* border:1px solid red; */
+        width: 100%;
+     
+    }
 }
 
 .formhead form{
     display: flex;
     flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
+    justify-content: space-evenly;
+     align-items: center;
     /* border:1px solid orange; */
     min-height: 400px;
 
