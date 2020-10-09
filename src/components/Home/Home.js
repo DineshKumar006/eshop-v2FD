@@ -102,7 +102,7 @@ for(let i=0;i<myContext.totalPage;i++){
                     {
                         state.menStyle!==null&&
                                 <div>
-                         <Suspense fallback={<h1>loading</h1>}>
+                         <Suspense fallback={<Spinner/>}>
                             <Paginate data={state.menStyle.data} loading={loading} PageHandler={PageHandler} />
                             </Suspense>
                             </div>
