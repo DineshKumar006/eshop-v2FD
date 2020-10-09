@@ -1,4 +1,5 @@
 import React, { Component,Suspense } from 'react';
+import Modal from '../../#UIElements/modal/modal'
 
 const NavRoute=React.lazy(()=>import('../navigation/navrouter/NavRoute'))
 class MainApp extends Component {
@@ -6,12 +7,9 @@ class MainApp extends Component {
         return (
             <div>
 
-
-                <Suspense fallback={'Loading'}>
+                <Suspense fallback={<Modal> <p>Validating...</p></Modal>}>
                 <NavRoute/>  
                 </Suspense>
-            
-               
             </div>
         );
     }

@@ -18,10 +18,28 @@ const Reducer=(oldstate=initialState,actions)=>{
             }
 
         case "REMOVE_ITEM_FROM_CART":
+            console.log(actions.id)
+
+
+            const reqdata2=oldstate.Data.filter(ele=>{
+                if(ele.itemid===actions.id){
+                    return ele.itemid!==actions.id
+                }else{
+                    return ele._id!==actions.id 
+                }
+               
+            })
+
+
             return{
                 ...oldstate,
-                Data: oldstate.Data.filter(ele=>ele._id!==actions.id),
+                Data:reqdata2
             }
+        case "REMOVE_ALL_ITEM_FROM_CART":
+                return{
+                    ...oldstate,
+                    Data:[]
+                }    
         case "ADD_ITEM_ID":
             return{
                 ...oldstate,

@@ -34,6 +34,28 @@ if(props.type==="plain"){
 }
 
 
+if(props.type==="mainpage"){
+    return (
+        <div onClick={props.click}>
+              <div className={Style.FallbackHeadplainFull}>
+
+                   <Loader
+                            type="Circles"
+                            color="red"
+                            height={70}
+                            width={70}
+                            timeout={5000} //3 secs
+                    
+                        />
+               
+            </div>
+        </div>
+    )
+}
+
+
+
+
         return (
             <div className={Style.FallbackHead}>
                 <div className={Style.Fallback}>

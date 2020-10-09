@@ -86,11 +86,16 @@ const cartHandler=async(ele)=>{
 
     };
 
-    const favHandlerDel=async(id)=>{
+    const favHandlerDel=async(itemid,id)=>{
         try {
+            console.log("dinesh kumar",id)
 
             dispatch({type:'REMOVE_ITEM_FROM_CART',id})
             dispatch({type:"REMOVE_ITEM_ID",eleid:id})
+
+            // dispatch({type:'REMOVE_ITEM_FROM_CART',id})
+            // dispatch({type:"REMOVE_ITEM_ID",eleid:id})
+
             setEleid(id)
             const response=await Axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/eshop/mycart/deleteCartItem/${id}`,{headers:{'Authorization':mycontext.token}})
             // console.log(response)
@@ -104,7 +109,7 @@ const cartHandler=async(ele)=>{
 
 
 
-//  console.log(state.laptops)
+ console.log(cartstate)
         return (
             <div style={{background:"white"}} className={Style.Header}>
 
@@ -127,12 +132,13 @@ const cartHandler=async(ele)=>{
                     return <div key={ele._id} className={Style.innerimg}>
 
                     {mycontext.isLogin?
-                    <div>                 
-                           {( cartstate.eleID.includes(ele._id) )&&
+                    <div>               
+                        {
+                           (cartstate.eleID.includes(ele._id) )&&
                                 <button className={Style.cartFavIcon}>
-                                    <HeartFill  size="30" color={"red"} onClick={()=>favHandlerDel(ele._id)}/>
+                                    <HeartFill  size="30" color={"red"} onClick={()=>favHandlerDel(ele.itemid,ele._id)}/>
                                 </button>
-                                }
+                        }
 
                             {(cartloading&&ele._id===eleId)?
                                  <button className={Style.cartIcon}>

@@ -53,13 +53,15 @@ const deleteHandler=()=>{
     setpreviewUrl('')
 
 }
+console.log(process.env.REACT_APP_BACKEND_URL)
  
 const uploadHandler=async()=>{
        setLoading(true)
     try {
         const formData=new FormData()
         formData.append("profile_image", image)
-        const response=await Axios.patch(`${process.env.REACT_APP_BACKEND_URL}/api/eshop/users/updateProfile`,formData,{headers:{'Authorization':mycontext.token}})
+        const response=await Axios.patch(`https://eshop-app-v2.herokuapp.com/api/eshop/users/updateProfile`,formData,{headers:{'Authorization':mycontext.token}})
+        console.log(response)
         const {avatarurl,email,token,username,_id}=response.data.user
         mycontext.isLoginHandler(avatarurl,_id,username,email,token)
         setpreviewUrl('')

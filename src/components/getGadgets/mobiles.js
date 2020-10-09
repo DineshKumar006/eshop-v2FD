@@ -98,8 +98,6 @@ const cartHandler=async(ele)=>{
 
 const favHandlerDel=async(id)=>{
     
-  
-
     try {
 
         dispatch({type:'REMOVE_ITEM_FROM_CART',id})

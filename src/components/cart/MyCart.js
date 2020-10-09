@@ -27,7 +27,6 @@ useEffect(()=>{
         setLoading(true)
         try {
             const response=await Axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/eshop/mycart/getCartData?pageno=1`,{headers:{'Authorization':mycontext.token}})
-            
             console.log(response.data.isUser.userCart)
             dispatch({type:'ADD_ITEM_IN_CART',payload:response.data.isUser.userCart, arrayFlag:true})
              setError('')
@@ -35,6 +34,9 @@ useEffect(()=>{
         } catch (error) {
          console.log(error.response.data)
          setError(error.response.data.message)
+
+         dispatch({type:'REMOVE_ALL_ITEM_FROM_CART'})
+
            setLoading(false)
 
         }
@@ -84,7 +86,11 @@ const deleteHandler=async(itemid,id)=>{
         console.log(error.response)
     }
 }
-console.log(!error)
+
+
+console.log(cartstate)
+
+
 
         return (
             <div className={Style.cardHead}>
