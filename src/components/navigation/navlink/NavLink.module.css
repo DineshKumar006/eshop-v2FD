@@ -8,11 +8,7 @@
    margin-right: 20px;
 }
 
-@media(max-width:45rem){
-  .route  .linksItem{
-        /* display: none; */
-    }
-}
+
 
 
 
@@ -154,11 +150,7 @@ position: relative;
 
 }
 
-.search{
-    /* border: 1px solid green; */
-   /* min-width: 350px; */
 
-}
 
 .SearchHead{
     display: flex;

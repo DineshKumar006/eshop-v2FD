@@ -8,8 +8,12 @@ import { ArrowUpCircle } from 'react-bootstrap-icons';
 import SideBar from '../../../#UIElements/sidebar/sidebar';
 import Fallback from '../../../#UIElements/fallBack/Fallback'
 import SearchBar from '../../../#UIElements/searchBar/searchBar'
-import {BagPlusFill,HouseDoorFill} from 'react-bootstrap-icons'
+import {BagPlusFill,HouseDoorFill,HouseFill} from 'react-bootstrap-icons'
+import HomeIcon from '@material-ui/icons/Home';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import {useHistory} from 'react-router-dom'
+import { red } from '@material-ui/core/colors';
+
 const NavLinks =()=>  {
 
 const mycontex=useContext(stateContext)
@@ -69,7 +73,7 @@ if(mycontex.isLogin){
 </div>
 
     <li className ={Style.ListItem}>
-         <NavLink activeClassName={Style.active} exact to='/' > <HouseDoorFill size="30" color="white"/></NavLink>
+         <NavLink activeClassName={Style.active} exact to='/' > <HouseFill size="30" color="orange"/></NavLink>
      </li>
 
     <li className ={Style.ListItem}> <NavLink  to='/mycart'  ><BagPlusFill size="30" color="orange"/></NavLink></li>
@@ -84,12 +88,12 @@ if(mycontex.isLogin){
     <ul className={Style.linksItem}>
       
     <li className ={Style.ListItem}  >
-        <Link onClick={clickHandler} activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Home" spy={true}  smooth={true} offset={-100}  duration={500}><HouseDoorFill size="30" color="white"/></Link>
+        <Link onClick={clickHandler} activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Home" spy={true}  smooth={true} offset={-100}  duration={500}><HouseFill size="30" color="red"/></Link>
      </li>
 
-    <div className={Style.MobileViewIcon}>
-    <li className ={Style.ListItem} ><Link onClick={clickHandler}   activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Login" spy={true}  smooth={true} offset={-100}  duration={500}>Login</Link></li>
-    </div>
+    {/* <div className={Style.MobileViewIcon}> */}
+    <li className ={Style.ListItem} ><Link onClick={clickHandler}   activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Login" spy={true}  smooth={true} offset={-100}  duration={500}><AccountCircleIcon style={{fontSize:30 , color: red[50]}}/> </Link></li>
+    {/* </div> */}
 
     <div className={Style.MobileViewIcon}>
     <li className ={Style.ListItem} ><Link onClick={clickHandler}   activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="About" spy={true}  smooth={true} offset={-100}  duration={500}>About</Link></li>
@@ -130,8 +134,8 @@ const sideBarRoute=(
                 
                   }
                   
-            <NavBar>
 
+            <NavBar>
 
                 {/* <div className={Style.SearchHead}> */}
 

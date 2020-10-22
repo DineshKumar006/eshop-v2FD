@@ -11,7 +11,7 @@ cursor: pointer;
 border: none;
 outline: none !important;
 background: transparent;
-z-index: 500;
+z-index: 200;
 }
 
 .searchHead input{

@@ -152,7 +152,7 @@ console.log(cartstate)
 
             <div className={Style.Spinner}>
                 {loading&&
-                <Spinner type="auth"/>
+                <Spinner/>
               }
                 </div>
 
