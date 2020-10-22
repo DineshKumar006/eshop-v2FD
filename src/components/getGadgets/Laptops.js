@@ -192,7 +192,7 @@ const cartHandler=async(ele)=>{
                 
 
                 <div className={Style.spinner}>
-                {loading&&<Spinner/>}
+                {loading&&<Spinner width="200px"/>}
                 </div>
 
 

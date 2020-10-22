@@ -9,3 +9,15 @@
 .card img{
     border-radius: 5px;
 }
+
+@media(max-width:45rem){
+    .card{
+        width: 120px;
+        height: 100px;
+    }
+    .card img{
+        width: 100px;
+        height: 100px;    }
+    
+
+}

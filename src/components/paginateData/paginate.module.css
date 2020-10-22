@@ -29,7 +29,7 @@
     }
 }
 .contentinner{
-    /* border: 1px solid blue; */
+  border: 1px solid rgb(182, 180, 180);
     
     /* box-shadow: 0px 0px 5px 0px rgb(177, 175, 175); */
     border-radius: 5px;
@@ -45,7 +45,7 @@
 
 .contentinner img{
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgb(161, 162, 163);
+    /* box-shadow: 0px 0px 5px 0px rgb(161, 162, 163); */
 
 
 }
@@ -190,4 +190,26 @@ z-index: 200;
 .slasherprice{
   text-decoration: line-through;
   color: red;
+}
+
+
+
+@media(max-width:45rem){
+  .contentinner{
+
+      width: 120px;
+      height: 200px;
+  }
+  .contentHead{
+      width: 100%;
+  }
+
+  .cartIcon,.cartFavIcon{
+      right:0;
+      top: 10px;
+  }
+  .discount{
+      left: 0;
+      top: 0;
+  }
 }

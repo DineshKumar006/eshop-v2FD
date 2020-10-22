@@ -32,9 +32,9 @@ const Spinner = (props)=> {
 
     return (
       <div className="sweet-loading">
-        <BarLoader	
+        <BounceLoader	
           css={override}
-          width={1000}
+          width={20}
           height={3}
           color={"skyblue"}
           loading={props.loading}
