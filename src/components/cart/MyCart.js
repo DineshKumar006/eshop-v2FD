@@ -108,14 +108,13 @@ console.log(cartstate)
                                 </ErrorModal>
 
                         }
+                        
                
                 {
+
                 cartstate.Data.length>0&&
 
-                    <div className={Style.card}>
-
-                     
-                        
+                    <div className={Style.card}>        
                     {
                     cartstate.Data.map(ele=>{
                         return <div key={ele._id} className={Style.innerimg}  >

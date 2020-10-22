@@ -9,15 +9,13 @@
     flex-direction: column;
 }
 .card{
-   
-  
     /* margin: auto;  */
+  
 
-    width: 70%;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    position: relative;
+    justify-content: space-evenly;
+    width: 80%;
 }
 
 @media(max-width:55rem){
@@ -32,10 +30,9 @@
     width: 270px;
     position: relative;
    min-height: 280px;
-   /* border: 1px solid red; */
+   border: 1px solid rgb(182, 180, 180);
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: center;
    min-height: 320px;
 }
@@ -178,4 +175,32 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+@media(max-width:45rem){
+    .innerimg{
+
+        width: 120px;
+        min-height: 200px;
+    }
+    .card{
+        width: 100%;
+    }
+
+    .cartIcon,.cartFavIcon{
+        right:0;
+        top: 10px;
+    }
+    .discount{
+       
+        left: 0;
+        top: 0;
+    }
+    .deleteIcon{
+        right: 2px;
+        top: 0;
+    }
 }

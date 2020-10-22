@@ -8,7 +8,7 @@ import { ArrowUpCircle } from 'react-bootstrap-icons';
 import SideBar from '../../../#UIElements/sidebar/sidebar';
 import Fallback from '../../../#UIElements/fallBack/Fallback'
 import SearchBar from '../../../#UIElements/searchBar/searchBar'
-import {BagPlusFill} from 'react-bootstrap-icons'
+import {BagPlusFill,HouseDoorFill} from 'react-bootstrap-icons'
 import {useHistory} from 'react-router-dom'
 const NavLinks =()=>  {
 
@@ -53,6 +53,8 @@ const user=JSON.parse(localStorage.getItem("userdata"))
 const clickHandler=()=>{
     mycontex.searchFlagHandler(false)
         history.push('/')
+        setBaropen(false)
+
 }
 
 let route
@@ -60,16 +62,17 @@ let route
 if(mycontex.isLogin){
   route=(  <ul className={Style.linksItem}>
 
+
+<div className={Style.MobileViewIcon}>
+
 <li className ={Style.ListItem}> <NavLink activeClassName={Style.active} exact to='/profile' >Hi,{mycontex.username?mycontex.username:''}</NavLink></li>
+</div>
 
     <li className ={Style.ListItem}>
-         <NavLink activeClassName={Style.active} exact to='/' > Home</NavLink>
-
+         <NavLink activeClassName={Style.active} exact to='/' > <HouseDoorFill size="30" color="white"/></NavLink>
      </li>
 
     <li className ={Style.ListItem}> <NavLink  to='/mycart'  ><BagPlusFill size="30" color="orange"/></NavLink></li>
-
-
 
     </ul> 
   )
@@ -80,22 +83,42 @@ if(mycontex.isLogin){
     route=(
     <ul className={Style.linksItem}>
       
-    <li className ={Style.ListItem} >
-        <Link onClick={clickHandler} activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Home" spy={true}  smooth={true} offset={-100}  duration={500}>Home</Link>
-        
-        </li>
+    <li className ={Style.ListItem}  >
+        <Link onClick={clickHandler} activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Home" spy={true}  smooth={true} offset={-100}  duration={500}><HouseDoorFill size="30" color="white"/></Link>
+     </li>
+
+    <div className={Style.MobileViewIcon}>
+    <li className ={Style.ListItem} ><Link onClick={clickHandler}   activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Login" spy={true}  smooth={true} offset={-100}  duration={500}>Login</Link></li>
+    </div>
+
+    <div className={Style.MobileViewIcon}>
+    <li className ={Style.ListItem} ><Link onClick={clickHandler}   activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="About" spy={true}  smooth={true} offset={-100}  duration={500}>About</Link></li>
+    </div>
+</ul>
+    )
+}
+const SideBarOpenHandler=()=>{
+    console.log(baropen)
+    setBaropen(!baropen)
+}
+
+
+
+const sideBarRoute=(
+    <ul className={Style.linksItem}  >
+      
+    <li className ={Style.ListItem}  >
+        <Link onClick={clickHandler} activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Home" spy={true}  smooth={true} offset={-100}  duration={500}>Home</Link>  
+    </li>
 
     <li className ={Style.ListItem} ><Link onClick={clickHandler}   activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="Login" spy={true}  smooth={true} offset={-100}  duration={500}>Login</Link></li>
    
     <li className ={Style.ListItem} ><Link onClick={clickHandler}   activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="About" spy={true}  smooth={true} offset={-100}  duration={500}>About</Link></li>
 </ul>
-    )
-}
+)
 
 
-const SideBarOpenHandler=()=>{
-    setBaropen(!baropen)
-}
+
 
 
 
@@ -144,12 +167,9 @@ const SideBarOpenHandler=()=>{
                     <NavLink  to='/#Home'   onClick={SideBarOpenHandler}>Logout</NavLink>
                     </li>
 
-                    {/* <li className ={Style.ListItem}>
-                        <Link  activeClass={Style.active} hashSpy={true} onSetActive={handleSetActive} to="About" spy={true}  smooth={true} offset={-100}  duration={500}>About</Link>
-                    </li> */}
 
                 </ul>
-                :route}
+                :sideBarRoute}
 
                         </div>
                        
